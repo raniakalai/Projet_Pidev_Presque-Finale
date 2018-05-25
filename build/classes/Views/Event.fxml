@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1219.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EventController">
+   <top>
+      <Pane prefHeight="69.0" prefWidth="1200.0" style="-fx-background-color: none;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="id2" layoutX="504.0" layoutY="5.0" onMouseClicked="#afficher2" text="Ajouter evenement" textFill="#0a0ef8">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <Lighting bumpInput="$null">
+                     <light>
+                       
+                     </light>
+                  </Lighting>
+               </effect></JFXButton>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" prefHeight="43.0" prefWidth="319.0" text="Liste des Evenements" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <TableView fx:id="EventTab" prefHeight="365.0" prefWidth="646.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="Description" prefWidth="107.0" text="Description" />
+            <TableColumn fx:id="Adresse" prefWidth="89.0" text="Adresse" />
+            <TableColumn fx:id="DateDebut" prefWidth="116.0" text="Date Debut" />
+            <TableColumn fx:id="DateFin" prefWidth="106.0" text="Date Fin" />
+            <TableColumn fx:id="Image" prefWidth="130.0" text="Image" />
+            <TableColumn fx:id="NombreParticipants" prefWidth="190.0" text="Nombre Participants" />
+            <TableColumn fx:id="total" prefWidth="133.0" text="Total Participants" />
+            <TableColumn fx:id="IDProduit" prefWidth="52.0" text="IDProduit" />
+            <TableColumn fx:id="Edit" prefWidth="74.0">
+               <graphic>
+                  <JFXButton fx:id="btnEdit" alignment="CENTER" onMouseClicked="#Edit" style="-fx-background-color: ;" text="Edit" textAlignment="CENTER" textFill="#0432e8">
+                     <font>
+                        <Font name="Elephant" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </graphic>
+            </TableColumn>
+            <TableColumn fx:id="Delete" prefWidth="202.0">
+               <graphic>
+                  <JFXButton fx:id="btnDelete" onMouseClicked="#Delete" text="Delete" textFill="#f50606">
+                     <font>
+                        <Font name="Elephant" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </graphic>
+            </TableColumn>
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

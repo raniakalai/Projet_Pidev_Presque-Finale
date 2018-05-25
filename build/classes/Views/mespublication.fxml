@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MespublicationController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="380.0" layoutX="842.0">
+         <image>
+            <Image url="@../Utiles/P112703-4.jpg" />
+         </image>
+      </ImageView>
+      <ScrollPane prefHeight="800.0" prefWidth="841.0">
+         <content>
+            <AnchorPane fx:id="anchorpane" prefHeight="800.0" prefWidth="841.0" />
+         </content>
+      </ScrollPane>
+      <JFXButton fx:id="retour" layoutX="1116.0" layoutY="14.0" onAction="#retour" prefHeight="86.0" prefWidth="85.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="71.0" fitWidth="67.0">
+               <image>
+                  <Image url="@../Utiles/icons8_Go_Back_48px_1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

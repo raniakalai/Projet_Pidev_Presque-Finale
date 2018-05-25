@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #86CBFF;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AfficherproduitController">
+   <children>
+      <ImageView fitHeight="809.0" fitWidth="1200.0" layoutY="-5.0">
+         <image>
+            <Image url="@../Utiles/P112703-4.jpg" />
+         </image>
+      </ImageView>
+      <ScrollPane fx:id="SP" fitToHeight="true" fitToWidth="true" layoutX="87.0" layoutY="132.0" prefHeight="500.0" prefWidth="1000.0" style="-fx-background-color: ;">
+         <content>
+            <AnchorPane fx:id="AP" prefHeight="500.0" prefWidth="1000.0" style="-fx-background-color: transparnent;">
+               <children>
+                  <ImageView fitHeight="507.0" fitWidth="1000.0" layoutX="-3.0" layoutY="-6.0" opacity="0.08">
+                     <image>
+                        <Image url="@../Utiles/P112703-4.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </content></ScrollPane>
+      <ComboBox fx:id="categoriecombo1" layoutX="482.0" layoutY="39.0" prefWidth="150.0" promptText="Catalogues" />
+      <JFXButton fx:id="ajout_btn" layoutX="332.0" layoutY="687.0" onAction="#ajout" prefHeight="65.0" prefWidth="192.0" style="-fx-background-color: #3D4356; -fx-background-radius: 5em;" text="Ajouter Bon Plan" textFill="WHITE">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../Utiles/icons8_Add_Row_48px.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton layoutX="1087.0" layoutY="26.0" onAction="#back_menu" text=" ">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../Utiles/icons8_List_48px.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="modif_btn" layoutX="668.0" layoutY="687.0" onAction="#modifier_produit" prefHeight="65.0" prefWidth="208.0" style="-fx-background-color: #3D4356; -fx-background-radius: 5em;" text="Modifier Bon plan " textFill="WHITE">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../Utiles/edit.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+   </children>
+</AnchorPane>

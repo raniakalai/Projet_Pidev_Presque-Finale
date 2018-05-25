@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LivraisonController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1200.0" opacity="0.6">
+         <image>
+            <Image url="@../Utiles/P112703-4.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="467.0" layoutY="24.0" text="Vos Livraisons" textFill="#9e1212">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="270.0" prefHeight="21.0" prefWidth="146.0" text="Nombre " textFill="#9e1212">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="209.0" text="Nom produit" textFill="#9e1212">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btn_valider" layoutX="218.0" layoutY="400.0" onAction="#ajout_livraison" style="-fx-background-color: #3D4356; -fx-background-radius: 5em;" text="Valider livraison" textFill="#f8f8f8" />
+      <TableView fx:id="tabview" layoutX="609.0" layoutY="107.0" prefHeight="351.0" prefWidth="519.0">
+         <columns>
+            <TableColumn fx:id="nom_col" prefWidth="130.0" style="color: #86CBFF;" text="Nom produit" />
+            <TableColumn fx:id="nbr_col" prefWidth="115.0" text="Nombres" />
+            <TableColumn fx:id="prixtot" prefWidth="75.0" text="Prix" />
+            <TableColumn fx:id="etat_col" minWidth="0.0" prefWidth="119.0" text="Etat" />
+         </columns>
+      </TableView>
+      <JFXComboBox fx:id="combo_produit" layoutX="270.0" layoutY="224.0" prefHeight="31.0" prefWidth="169.0" style="-fx-background-color: white;" />
+      <Spinner fx:id="spinner" layoutX="270.0" layoutY="285.0" prefHeight="31.0" prefWidth="73.0" />
+      <JFXButton layoutX="1059.0" layoutY="7.0" onAction="#retourDetail" prefHeight="75.0" prefWidth="98.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="62.0" fitWidth="72.0">
+               <image>
+                  <Image url="@../Utiles/icons8_Go_Back_48px_1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

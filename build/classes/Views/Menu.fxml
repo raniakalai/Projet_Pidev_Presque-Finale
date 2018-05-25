@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #EE3D4A;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MenuController">
+   <children>
+      <ImageView fitHeight="727.0" fitWidth="1207.0" layoutX="-5.0" layoutY="79.0">
+         <image>
+            <Image url="@../Utiles/P112703-4.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="81.0" prefWidth="1200.0" style="-fx-background-color: #3D4356;">
+         <children>
+            <JFXButton focusTraversable="false" layoutX="1065.0" layoutY="25.0" onAction="#go_Back_inscri" style="-fx-background-color: white; -fx-background-radius: 5em;" text="Deconnexion" />
+            <ImageView layoutX="980.0" layoutY="17.0">
+               <image>
+                  <Image url="@../Utiles/icons8_Male_User_48px_1.png" />
+               </image>
+            </ImageView>
+            <JFXButton focusTraversable="false" layoutX="978.0" layoutY="17.0" onAction="#go_Profile" prefHeight="48.0" prefWidth="51.0" text=" " />
+         </children>
+      </AnchorPane>
+      
+   </children>
+</AnchorPane>

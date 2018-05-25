@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UpformController">
+   <top>
+      <Pane prefHeight="72.0" prefWidth="600.0" style="-fx-background-color: pink;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="262.0" fitWidth="1200.0" layoutX="-2.0" layoutY="-183.0">
+               <image>
+                  <Image url="@../Utiles/P112703-4.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <Pane prefHeight="66.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="44.0" layoutY="220.0" prefHeight="278.0" prefWidth="198.0">
+               <children>
+                  <JFXTextField fx:id="Description" prefHeight="20.0" prefWidth="198.0" promptText="Description">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="Adresse" prefHeight="24.0" prefWidth="198.0" promptText="Adresse">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <DatePicker fx:id="Datedebut" prefHeight="45.0" prefWidth="198.0" promptText="Date Debut" />
+               </children>
+            </VBox>
+            <VBox layoutX="288.0" layoutY="216.0" prefHeight="248.0" prefWidth="245.0">
+               <children>
+                  <DatePicker fx:id="Datefin" prefHeight="40.0" prefWidth="245.0" promptText="Date Fin" />
+                  <JFXTextField fx:id="nbr" prefHeight="45.0" prefWidth="245.0" promptText="Nombre de participants">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="total" prefHeight="38.0" prefWidth="245.0" promptText="Nombre Tickets">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </VBox>
+            <JFXButton fx:id="submit" alignment="CENTER" contentDisplay="CENTER" layoutX="195.0" layoutY="434.0" onMouseClicked="#Update" prefHeight="51.0" prefWidth="150.0" style="-fx-background-color: #3D4356; -fx-background-radius: 5em;" text="SUBMIT" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="86.0" layoutY="74.0" text="Modifier Evenement" textFill="#170101">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </left>
+   <bottom>
+      <ImageView fitHeight="200.0" fitWidth="1207.0" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../Utiles/P112703-4.jpg" />
+         </image>
+      </ImageView>
+   </bottom>
+</BorderPane>

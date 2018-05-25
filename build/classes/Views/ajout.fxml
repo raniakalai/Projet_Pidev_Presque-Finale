@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjoutController">
+    <children>
+      <ImageView fitHeight="855.0" fitWidth="1200.0" layoutY="-7.0" opacity="0.6">
+         <image>
+            <Image url="@../Utiles/P112703-4.jpg" />
+         </image>
+      </ImageView>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <JFXButton fx:id="ajouter_publication" layoutX="363.0" layoutY="513.0" onAction="#ajouter_publication" prefHeight="58.0" prefWidth="138.0" style="-fx-background-color: #3D4356; -fx-background-radius: 5em;" text="Ajouter" textFill="#eeeeee">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../Utiles/icons8_Add_Row_48px.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXTextArea fx:id="contenu" focusColor="#0a0c17" layoutX="202.0" layoutY="245.0" style="-fx-background-color: white;" unFocusColor="#1e1313" />
+      <Label layoutX="202.0" layoutY="167.0" prefHeight="78.0" prefWidth="411.0" text="Contenu de votre publication" textFill="#9e1212">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font></Label>
+      <JFXButton fx:id="selectionner_photo" layoutX="911.0" layoutY="423.0" onAction="#uploadImage" prefHeight="58.0" prefWidth="223.0" style="-fx-background-color: #3D4356; -fx-background-radius: 5em;" text="Selectionner photo" textFill="WHITE">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../Utiles/icons8_Add_Image_48px.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <ImageView fx:id="imagepublication" fitHeight="269.0" fitWidth="395.0" layoutX="791.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXComboBox fx:id="categoriecombo" layoutX="282.0" layoutY="47.0" prefHeight="32.0" prefWidth="131.0" promptText="Categorie" style="-fx-background-color: white;" />
+      <JFXComboBox fx:id="comboville" layoutX="451.0" layoutY="47.0" prefHeight="32.0" prefWidth="110.0" promptText="Ville" style="-fx-background-color: white;" />
+      <JFXComboBox fx:id="comboproduit" layoutX="600.0" layoutY="47.0" prefHeight="32.0" prefWidth="101.0" promptText="Produit" style="-fx-background-color: white;" />
+      <JFXButton fx:id="retour" layoutX="1057.0" layoutY="21.0" onAction="#back" prefHeight="84.0" prefWidth="110.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="68.0" fitWidth="70.0">
+               <image>
+                  <Image url="@../Utiles/icons8_Go_Back_48px_1.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+    </children>
+</AnchorPane>

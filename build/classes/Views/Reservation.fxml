@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ReservationController">
+   <top>
+      <Pane prefHeight="42.0" prefWidth="812.0" style="-fx-background-color: #6495ED;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="id2" buttonType="RAISED" layoutX="489.0" layoutY="6.0" onMouseClicked="#afficher2" style="-fx-background-color: white;" text="Telecharger" textFill="#000111">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <Lighting bumpInput="$null">
+                     <light>
+                       
+                     </light>
+                  </Lighting>
+               </effect></JFXButton>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="120.0" layoutY="1.0" prefHeight="43.0" prefWidth="319.0" text="Liste des Reservations" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <TableView fx:id="EventTab" prefHeight="358.0" prefWidth="620.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="IDuser" prefWidth="75.0" text="IDUser" />
+            <TableColumn fx:id="IDProduit" prefWidth="112.0" text="IDProduit" />
+            <TableColumn fx:id="Delete" prefWidth="100.0">
+               <graphic>
+                  <JFXButton fx:id="btnDelete" onMouseClicked="#Delete" text="Delete" textFill="#f50606">
+                     <font>
+                        <Font name="Elephant" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </graphic>
+            </TableColumn>
+        </columns>
+      </TableView>
+   </center>
+   <left>
+      <Pane prefHeight="358.0" prefWidth="151.0" style="-fx-background-color: #6495ED;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="460.0" layoutX="-306.0" layoutY="-42.0">
+               <image>
+                  <Image url="@../Utiles/P112703-4.jpg" />
+               </image>
+            </ImageView>
+         </children></Pane>
+   </left>
+</BorderPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="387.0" prefWidth="484.0" style="-fx-background-color: #F0675E;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ModifierController">
+   <children>
+      <TableView fx:id="reclamTable" onMouseClicked="#Reclam_Modif" prefHeight="387.0" prefWidth="518.0">
+         <columns>
+            <TableColumn fx:id="ID" prefWidth="37.000030517578125" text="ID" />
+            <TableColumn fx:id="Sujet" editable="true" prefWidth="75.0" text="Sujet" />
+            <TableColumn fx:id="Reclamation" prefWidth="113.0" text="Reclamation" />
+            <TableColumn fx:id="Date" prefWidth="68.0" text="Date" />
+            <TableColumn fx:id="etat" prefWidth="106.0" text="Etat" />
+            <TableColumn fx:id="BoutonSupp" prefWidth="116.0" text="Supprimer" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

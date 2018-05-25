@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="date" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLAjoutController">
+   <children>
+      <ImageView fitHeight="814.0" fitWidth="1221.0" layoutY="-4.0" opacity="0.55">
+         <image>
+            <Image url="@../Utiles/P112703-4.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#9e1212" fontSmoothingType="LCD" layoutX="467.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez entrer votre reclamation" textAlignment="CENTER" wrappingWidth="265.13671875">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font></Text>
+      <JFXTextArea fx:id="reclamation" focusColor="#f5f5f5" layoutX="379.0" layoutY="313.0" prefHeight="185.0" prefWidth="464.0" style="-fx-background-color: white;" />
+      <JFXTextArea fx:id="sujet" focusColor="WHITE" layoutX="379.0" layoutY="253.0" prefHeight="32.0" prefWidth="464.0" style="-fx-background-color: white;" />
+      <Text fill="#9e1212" fontSmoothingType="LCD" layoutX="228.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sujet">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Text>
+      <Text fill="#9e1212" fontSmoothingType="LCD" layoutX="165.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reclamation">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="envoyer" buttonType="RAISED" contentDisplay="CENTER" layoutX="833.0" layoutY="565.0" onAction="#ajouter_reclamation" prefHeight="62.0" prefWidth="222.0" ripplerFill="BLACK" style="-fx-background-color: #3D4356; -fx-background-radius: 5em;" text="Envoyer" textAlignment="RIGHT" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      
+      
+      <JFXButton buttonType="RAISED" layoutX="1041.0" layoutY="20.0" onAction="#retour4" prefHeight="80.0" prefWidth="138.0" text=" ">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="63.0" fitWidth="84.0">
+               <image>
+                  <Image url="@../Utiles/icons8_Go_Back_48px_1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label fx:id="alerte" layoutX="871.0" layoutY="274.0" prefWidth="237.0" text="veuillez saisir un sujet !" textFill="#f50000" visible="false" />
+      <Label fx:id="spam" layoutX="875.0" layoutY="293.0" text="Sujet déja existant !!!" textFill="#ff0101" visible="false" />
+      <JFXTextArea fx:id="email" editable="false" focusColor="WHITE" layoutX="379.0" layoutY="189.0" prefHeight="32.0" prefWidth="464.0" style="-fx-background-color: white;" />
+      <Text fill="#9e1212" fontSmoothingType="LCD" layoutX="226.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Text>
+      <Label fx:id="alertemail" layoutX="875.0" layoutY="206.0" prefHeight="17.0" prefWidth="108.0" text="Saisir Email !! " textFill="RED" visible="false" />
+      <Text fx:id="alertereclam" fill="RED" layoutX="871.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Champ Vide !!!" visible="false" />
+      <ImageView layoutX="855.0" layoutY="572.0">
+         <image>
+            <Image url="@../Utiles/icons8_Send_Email_48px_1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

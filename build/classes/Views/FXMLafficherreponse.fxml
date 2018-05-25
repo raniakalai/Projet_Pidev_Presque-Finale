@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="252.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLafficherreponseController">
+   <children>
+      <ScrollPane fitToWidth="true" prefHeight="252.0" prefWidth="600.0">
+         <content>
+            <AnchorPane fx:id="anchorpane" prefHeight="252.0" prefWidth="581.0">
+               <children>
+                  <ImageView fitHeight="2000.0" fitWidth="594.0" opacity="0.25">
+                     <image>
+                        <Image url="@../Utiles/P112703-4.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
